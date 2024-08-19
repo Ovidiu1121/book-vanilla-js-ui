@@ -1,0 +1,231 @@
+body {
+    padding: 20px;
+    font: 18px "Garamond", serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+a {
+    color: #00796b;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+a:hover {
+    color: #004d40;
+    text-decoration: underline;
+}
+
+a.button,
+input[type=submit] {
+    color: white;
+    background: #00796b;
+    font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+form a.button,
+input[type=submit] {
+    margin-left: 140px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+input[type=submit] {
+    border: none;
+}
+
+a.button:hover,
+input[type=submit]:hover {
+    background-color: #004d40;
+    transform: translateY(-2px);
+}
+
+p {
+    margin: 20px 0;
+}
+
+ul {
+    padding: 0;
+    list-style-type: none;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+h1 {
+    font-size: 3rem;
+    color: #222;
+    margin-bottom: 25px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.button {
+    background-color: #388e3c;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-bottom: 20px;
+}
+
+.button:hover {
+    background-color: #2e7d32;
+    transform: translateY(-2px);
+}
+
+.table {
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: normal;
+    border: none;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 100%;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+th {
+    text-align: center;
+    padding: 10px 20px;
+    background-color: #00796b;
+    color: white;
+    font-weight: bold;
+}
+
+.table-header {
+    color: white;
+}
+
+.table-header th:nth-child(odd) {
+    background-color: #004d40;
+}
+
+tr {
+    min-height: 50px;
+    text-align: center;
+}
+
+tr:nth-child(odd) {
+    background: #f0f0f0;
+}
+
+td {
+    padding: 10px 20px;
+}
+
+form {
+    background-color: #ffffff;
+    padding: 40px;
+    max-width: 500px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Form elements */
+form p {
+    margin-bottom: 25px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #444;
+    font-size: 1rem;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 14px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fafafa;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+input[type="text"]:focus {
+    border-color: #00796b;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+    outline: none;
+}
+
+button {
+    padding: 14px 24px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 10px;
+}
+
+.createBook {
+    display: inline-block;
+    background-color: #388e3c;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.createBook a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.createBook:hover {
+    background-color: #2e7d32;
+    box-shadow: 0 4px 12px rgba(0, 128, 0, 0.3);
+    transform: translateY(-2px);
+}
+
+.cancel {
+    display: inline-block;
+    background-color: #d32f2f;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 4px;
+    font-weight: 600;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.cancel:hover {
+    background-color: #c62828;
+    box-shadow: 0 4px 12px rgba(211, 47, 47, 0.3);
+    transform: translateY(-2px);
+}
+
+.cancel a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.titleErr,
+.authorErr,
+.genreErr,
+.beDisplayed {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+    visibility: hidden;
+}
+
+.beDisplayed {
+    visibility: visible;
+}
